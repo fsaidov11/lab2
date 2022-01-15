@@ -2,7 +2,6 @@ package com.company.moves;
 
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.SpecialMove;
-import ru.ifmo.se.pokemon.Status;
 import ru.ifmo.se.pokemon.Type;
 
 public class DazzlingGleam extends SpecialMove {
@@ -12,8 +11,7 @@ public class DazzlingGleam extends SpecialMove {
 
     @Override
     protected void applyOppDamage(Pokemon def, double damage) {
-        Status p_stat = def.getCondition();
-        super.applyOppDamage(def, damage * 2);
+        super.applyOppDamage(def, damage);
     }
 
     @Override
