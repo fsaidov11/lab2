@@ -12,6 +12,8 @@ public class SweetScent extends StatusMove {
     protected void applyOppEffects(Pokemon p) {
         Effect e1 = new Effect().turns(1).stat(Stat.EVASION, -2);
         Effect e2 = new Effect().turns(1).stat(Stat.HP, 6);
+        p.addEffect(e1);
+        p.addEffect(e2);
     }
 
     @Override
