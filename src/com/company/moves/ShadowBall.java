@@ -1,8 +1,8 @@
 package com.company.moves;
 
-import ru.ifmo.se.pokemon.Effect;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.SpecialMove;
+import ru.ifmo.se.pokemon.Stat;
 import ru.ifmo.se.pokemon.Type;
 
 public class ShadowBall extends SpecialMove {
@@ -13,7 +13,7 @@ public class ShadowBall extends SpecialMove {
     @Override
     protected void applyOppEffects(Pokemon p) {
         if (Math.random() < 0.2) {
-            Effect.flinch(p);
+            p.setMod(Stat.SPECIAL_DEFENSE,  -6);
         }
     }
 
