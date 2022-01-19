@@ -13,7 +13,7 @@ public class ShadowBall extends SpecialMove {
     @Override
     protected void applyOppEffects(Pokemon p) {
         if (Math.random() < 0.2) {
-            p.setMod(Stat.SPECIAL_DEFENSE,  -6);
+            p.setMod(Stat.SPECIAL_DEFENSE,  -1);
         }
     }
 
